@@ -1,6 +1,5 @@
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { renderToString } from "react-dom/server";
 
 import "swiper/css";
 import "swiper/css/navigation";
