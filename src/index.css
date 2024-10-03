@@ -4,19 +4,29 @@
 
 body {
   margin: 0;
-  background-color: aqua;
+  background-color: black;
 }
 
 
 .swipu .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 150px;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  /* gap between dots */
+  column-gap: 0.5rem;
 }
 
 .swipu .swiper-pagination-bullet-active.banner-dot {
+  /* active dot color */
   background-color: #D5AF37;
+  
 }
 
 .swipu .banner-dot {
+  /* default color dot */
   background-color: #CCCDCE;
+  /* size dot */
+  height: 12px;
+  width: 12px;
 }
 

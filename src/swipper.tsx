@@ -1,5 +1,6 @@
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { renderToString } from "react-dom/server";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,11 +18,11 @@ function Banner({ image }: { image: string }) {
     return `https://picsum.photos/${random}/500`;
   };
   return (
-    <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full flex items-center justify-center">
       <img
         src={image ?? getRandomPhotos()}
         alt="pic"
-        className="object-cover w-full h-full min-h-screen"
+        className="object-contain w-full"
       />
     </div>
   );
@@ -36,8 +37,8 @@ export function Swipu() {
         slidesPerView={1}
         pagination={{
           clickable: true,
-          renderBullet: (className) => {
-            return `<div class="${className} banner-dot"></div>`;
+          renderBullet: (_, className) => {
+            return `<div class="${className} mb-40 banner-dot"></div>`;
           },
         }}
         autoplay={{ delay: 2000 }}
