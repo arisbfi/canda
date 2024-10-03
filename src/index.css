@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  background-color: aqua;
+}
+
+
+.swipu .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 150px;
+}
+
+.swipu .swiper-pagination-bullet-active.banner-dot {
+  background-color: #D5AF37;
+}
+
+.swipu .banner-dot {
+  background-color: #CCCDCE;
+}
+
